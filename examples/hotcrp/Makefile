@@ -1,6 +1,6 @@
 include ../../Flags.mk
 
-DIRS=
+DIRS=udf
 
 # == mysqlparser ==
 INCLUDE_PATHS +=
@@ -24,7 +24,10 @@ QCOBJ=$(QCSRC:.c=.o)
 
 all: dir src libs libso
 
-dir: src
+dir:
+	for d in $(DIRS); do	\
+		$(MAKE) -C $$d;	\
+	done
 
 src: $(QCOBJ) $(QHDR)
 

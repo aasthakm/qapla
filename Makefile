@@ -44,8 +44,6 @@ CSRC=	\
 			qinfo/query_context.c	\
 			qinfo/query_info.c	\
 			qinfo/query_symbol.c	\
-			udf/affil.c	\
-			udf/topic.c
 
 CXXSRC=	\
 				qinfo/qapla_col_parser.cpp	\
