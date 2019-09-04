@@ -184,3 +184,17 @@ For policies in AND_NON_AGGR and AND_AGGR cluster, one must explicitly specify t
 restrictiveness relationship between the policies.
 
 See examples in hotcrp_load_standard_policies() in hotcrp/hotcrp_pol_db.c
+
+
+Publications
+============
+Qapla: Policy compliance for database-backed systems (USENIX Security'17)
+Aastha Mehta, Eslam Elnikety, Katura Harvey, Deepak Garg, Peter Druschel
+https://people.mpi-sws.org/~aasthakm/files/qapla.pdf
+
+If you use this code in your work, please cite the paper above.
+
+
+Contact
+=======
+Aastha Mehta <aasthakm@mpi-sws.org>
