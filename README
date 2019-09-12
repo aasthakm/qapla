@@ -36,13 +36,11 @@ policyapi - API to generate policy code
 dlog_pi, sql_pi - policy interpreter and rewriting code
 qinfo - internal datastructures of QRM
 dbif - wrapper on C mysql connector API
-hotcrp - policies for HotCRP use case (schema based on v2.99)
-udf - examples for writing UDF functions
 common - code shared by above directories
 utils - utilities
 examples - small tests for QRM and the query parser
-bench - QRM with statistics generation for internal overheads
-
+examples/hotcrp - policies for HotCRP use case (schema based on v2.99)
+examples/hotcrp/udf - examples for writing UDF functions
 
 Schema specification
 ====================
