@@ -7,13 +7,13 @@ queries for mysql DB. The re-written queries can be executed
 manually on the DB backend.
 
 Steps to use:
-(1) Setup your database in mysql.
-(2) Create an administrative user (e.g. qapla).
-(3) Configure DB_NAME and DB_ADMIN in config.h to the name of your
+1. Setup your database in mysql.
+2. Create an administrative user (e.g. qapla).
+3. Configure DB_NAME and DB_ADMIN in config.h to the name of your
 database and user respectively.
-(4) Define your policies (see below)
-(5) Generate re-written queries using refmon script
-(6) Execute generated queries on database
+4. Define your policies (see below)
+5. Generate re-written queries using refmon script
+6. Execute generated queries on database
 
 QRM can be integrated with a database adapter, to provide policy
 enforcement for an application at runtime.
