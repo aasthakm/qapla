@@ -248,6 +248,8 @@ mysql_get_sql_for_col(char *out, char *cname, char *pol, int pol_len)
 	col_rewrite_ptr += 9;
 	memcpy(col_rewrite_ptr, cname, strlen(cname));
 	col_rewrite_ptr += strlen(cname);
+
+  return 0;
 }
 
 static int
@@ -269,6 +271,8 @@ general_get_sql_for_col(char *out, char *cname, char *pol, int pol_len)
 	col_rewrite_ptr += strlen(end_str);
 	memcpy(col_rewrite_ptr, cname, strlen(cname));
 	col_rewrite_ptr += strlen(cname);
+
+  return 0;
 }
 
 static int

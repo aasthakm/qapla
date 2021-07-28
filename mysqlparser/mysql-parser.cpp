@@ -1226,7 +1226,7 @@ ANTLR3_MARKER MySQLRecognizerTreeWalker::token_index()
 size_t MySQLRecognizerTreeWalker::token_offset()
 {
   pANTLR3_COMMON_TOKEN token = _tree->getToken(_tree);
-  return (size_t)(token->start - (ANTLR3_MARKER)_recognizer->lineStart());
+  return (size_t)(token->start - static_cast<ANTLR3_MARKER>(reinterpret_cast<intptr_t>(_recognizer->lineStart())));
 }
 
 //--------------------------------------------------------------------------------------------------

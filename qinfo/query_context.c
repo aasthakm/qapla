@@ -200,6 +200,8 @@ dup_context_symbol_list(context_t *context, int list, list_t *dup_list)
 		dup_sym = dup_symbol(sym);
 		list_insert(dup_list, &dup_sym->symbol_listp);
 	}
+
+  return 0;
 }
 
 symbol_t *

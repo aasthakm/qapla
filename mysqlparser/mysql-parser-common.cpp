@@ -88,7 +88,7 @@ MySQLRecognitionBase::~MySQLRecognitionBase()
 void MySQLRecognitionBase::add_error(const std::string &message, ANTLR3_UINT32 token,
   ANTLR3_MARKER token_start, ANTLR3_UINT32 line, ANTLR3_UINT32 offset_in_line, ANTLR3_MARKER length)
 {
-  MySQLParserErrorInfo info = { message, token, (size_t)(token_start - (ANTLR3_MARKER)lineStart()),
+  MySQLParserErrorInfo info = { message, token, (size_t)(token_start - static_cast<ANTLR3_MARKER>(reinterpret_cast<intptr_t>(lineStart()))),
     line, offset_in_line, (size_t)length };
   d->_error_info.push_back(info);
 };
